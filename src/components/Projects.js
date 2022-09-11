@@ -15,6 +15,7 @@ import p9 from "../assets/img/cyborg-107.svg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import React from 'react';
 
 export const Projects = () => {
 
