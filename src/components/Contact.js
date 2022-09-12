@@ -14,7 +14,7 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
+  const [buttonText, setButtonText] = useState('Send An Email');
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -62,7 +62,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                {/* <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" required onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -81,14 +81,9 @@ export const Contact = () => {
                       <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
-                    {/* {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    } */}
                   </Row>
-                </form>
+                </form> */}
+                <button type="submit" onClick={() => window.location = 'mailto:daniffyx01@gmail.com'} ><span>{buttonText}</span></button>
               </div>}
             </TrackVisibility>
           </Col>
