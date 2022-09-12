@@ -5,11 +5,20 @@ const nodemailer = require("nodemailer");
 require('dotenv').config();
 let PORT = process.env.PORT || 5000;
 
+const path = require('path');
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(PORT, () => console.log("Server Running"));
+
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static("build"));
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+    })
+}
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
