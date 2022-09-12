@@ -31,10 +31,11 @@ export const Contact = () => {
     let response = await fetch("/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formDetails),
     }).catch(err => {console.log(err)});
+
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);

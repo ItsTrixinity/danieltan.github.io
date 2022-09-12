@@ -50,8 +50,11 @@ router.post("/contact", (req, res) => {
     contactEmail.sendMail(mail, (error) => {
         if (error) {
             res.json(error);
+            res.sendStatus(500);
         } else {
-            res.json({code: 200, status: "Message Sent"});
+            res.json({status: "Message Sent"});
+            res.sendStatus(200);
         }
+        return res.end();
     });
 })
