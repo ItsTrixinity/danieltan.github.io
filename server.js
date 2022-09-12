@@ -33,7 +33,7 @@ contactEmail.verify((error) => {
     }
 });
 
-router.post("https://port-folio-deploy.herokuapp.com/contact", (req, res) => {
+router.post("/contact", (req, res) => {
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
