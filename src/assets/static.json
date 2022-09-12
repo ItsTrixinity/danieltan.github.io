@@ -5,7 +5,7 @@
     },
     "proxies": {
       "/api/": {
-        "origin": "${API_URL}"
+        "origin": "https://port-folio-deploy.herokuapp.com/"
       }
     }
   }
