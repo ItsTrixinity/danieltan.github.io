@@ -34,6 +34,7 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  overflow-x: auto;
 }
 
 html,body {
@@ -41,7 +42,7 @@ html,body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* overflow-x: hidden; */
+  /* overflow-x: auto; */
 }
 
 h1, h2, h3, h4, h5, h6 {
