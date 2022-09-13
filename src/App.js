@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -9,9 +9,14 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import React from 'react';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
+
   return (
     <div className="App">
+      <ToastContainer/>
       <NavBar />
       <Banner />
       <Skills />

@@ -36,6 +36,14 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden; */
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -508,9 +516,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-.profile-img{
+.newsletter-bx .profile-img{
   max-width: 100%;
   max-height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .about{
@@ -520,6 +530,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .newsletter-bx h2 {
 	font-size: 45px;
 	font-weight: 700;
+}
+
+.about .newsletter-bx p {
+	max-width: 100%;
+  line-height: 1.5em;
 }
 
 .hover-underline-animation {
@@ -569,6 +584,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  text-align: center;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -606,6 +622,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  margin:0 auto;
+  display:block;
 }
 .contact button span {
   z-index: 1;
@@ -641,6 +659,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 600px){
+
+  .about .newsletter-bx {
+    padding: 100px 20px 20px 20px;
+    overflow-x: hidden; 
+  }
+
+  .newsletter-bx img.profile-img{
+    width: 100%;
+    border-radius: 55px;
+  }
+
+  .contact h2 {
+    /* float: right;
+    margin-right: 60px; */
+    text-align: center;
+  }
+}
+
 .newsletter-bx {
   background: linear-gradient(90.21deg, #fffdfe -5.91%, #4A2FBD 111.58%);
   border-radius: 55px;

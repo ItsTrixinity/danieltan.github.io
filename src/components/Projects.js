@@ -1,8 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import p1 from "../assets/img/covid.svg"
 import p2 from "../assets/img/dizzy-gaming.svg"
 import p3 from "../assets/img/spaceinvader.svg"
@@ -17,6 +14,8 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
 
+
+
 export const Projects = () => {
 
   const projects = [
@@ -24,25 +23,25 @@ export const Projects = () => {
       title: "COVID Testing \nRegistration System",
       description: "Software Architecture, Development and Design\n❖ Java, RESTAPIs",
       imgUrl: p1,
-      link: "javascript:;",
+      link: "#",
     },
     {
       title: "Design O' Souls",
       description: "Object Oriented Programming\n❖ Java, Software Design",
       imgUrl: p2,
-      link: "javascript:;",
+      link: "#",
     },
     {
       title: "Space Invaders",
       description: "Functional Reactive Programming\n❖ JavaScript, TypeScript, RxJS, HTML",
       imgUrl: p3,
-      link: "javascript:;",
+      link: "#",
     },
     {
       title: "Twenty-One",
       description: "Pure Functional Programming \n❖ Haskell",
       imgUrl: p4,
-      link: "javascript:;",
+      link: "#",
     },
     {
       title: "Youtube and Ethics",
@@ -54,7 +53,7 @@ export const Projects = () => {
       title: "Algorithms and Data Structures",
       description: "Boyer-Moore, Ukkonen, Miller-Rabin, LZ-77\n❖ Python",
       imgUrl: p6,
-      link: "javascript:;",
+      link: "#",
     },
   ];
 
@@ -75,7 +74,7 @@ export const Projects = () => {
       title: "This Website!",
       description: "My personal portfolio website is also one of my interesting projects!\n❖ ReactJS, CSS",
       imgUrl: p9,
-      link: "javascript:;",
+      link: "#",
     },
   ];
 
