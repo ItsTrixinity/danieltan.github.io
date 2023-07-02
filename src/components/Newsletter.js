@@ -32,13 +32,13 @@ export const Newsletter = ({ status, message, onValidated }) => {
           <p align="justify" style={{color:'black'}}>Hey there! <br/> 
           My name is <b>Daniel Tan</b> (He/Him) and thanks for stopping by my portfolio. Here's a quick FAQ!<br/>
           <br/>
-          🍃 My <b>Interests?</b><br/>
+          🍃 My <b>Interests</b><br/>
           Nature, Travelling, Games Design, Website Building, Exploration<br/> 
           <br/>
-          🍃 My <b>Personal Traits?</b><br/>
+          🍃 My <b>Personal Traits</b><br/>
           Inquisive, Enlightening, Inclusive, Team Player, Communicative<br/> 
           <br/>
-          🍃 Why <b>Computer Science?</b><br/>
+          🍃 Why <b>Computer Science</b><br/>
           I've been fortunate (<i>or some may say unfortunate</i>) enough to have interacted with tech when I was at a very young age
           and this sort of was the reason that sparked my curiosity in venturing towards the field of <b>Science and Technology.</b> <br/>
           <br/>
@@ -52,7 +52,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
           Now here I am, exploring the field of <b>Computer Science</b> as an undergraduate student in <b>Monash University</b>. <br/>
           Despite it was and still is a pretty challenging and exhausting process, I can confidently say that I did not regret the experience. <br/>
           <br/>
-          🍃 Why <b>Software Development / Games Design? </b><br/>
+          🍃 Why <b>Software Development / Games Design </b><br/>
           Back then, there's this game called <b>Minecraft</b> that I would basically play for endless hours and days. For those that do not know what's <b>Minecraft</b>,
           it's basically a sandbox game where you get to play as a character named <b>Steve</b>, where the main goal of the game is to survive but at the same time, allows you to express your creativity by
           building what you would call your own world (something that I really enjoyed). When servers were introduced, my friends and I would team up and play together as a bunch, which was seriously some good old 

@@ -1,4 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { ProjectCard } from "./ProjectCard";
 import p1 from "../assets/img/covid.svg"
 import p2 from "../assets/img/dizzy-gaming.svg"
@@ -9,6 +10,7 @@ import p6 from "../assets/img/coding.svg"
 import p7 from "../assets/img/Test-Design.jpg"
 import p8 from "../assets/img/flat-website-prototyping.svg"
 import p9 from "../assets/img/cyborg-107.svg"
+import p10 from "../assets/img/configura_logo-1.svg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -17,6 +19,8 @@ import React from 'react';
 
 
 export const Projects = () => {
+
+  const [showImage, setShowImage] = React.useState(false);
 
   const projects = [
     {
@@ -99,9 +103,13 @@ export const Projects = () => {
                     <Nav.Item>
                       <Nav.Link eventKey="third">Academic Journey</Nav.Link>
                     </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fourth">Personal Career</Nav.Link>
+                    </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__zoomInRight" : ""}>
                     <Tab.Pane eventKey="first">
+                    <p class="hover-underline-animation"><b>University Projects</b></p>
                       <Row>
                         {
                           projects.map((project, index) => {
@@ -116,6 +124,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
+                    <p class="hover-underline-animation"><b>Personal Projects</b></p>
                     <Row>
                         {
                           personal_projects.map((project, index) => {
@@ -155,6 +164,22 @@ export const Projects = () => {
                         <br/>🏆 Receiver of Highest Performing Student Award in FIT1051: Programming Fundamentals In Java (Bachelor of Computer Science)
                       </p>
 
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                    <p class="hover-underline-animation"><b>Personal Career</b></p>
+                    <Row>
+                      <div class="career_container">
+                          <div class="career_image" 
+                            onMouseEnter={() => setShowImage(false)}
+                            onMouseLeave={() => setShowImage(true)}>
+                              <a href="https://www.configura.com/" target="_blank"><img src={p10} style={{width: "100%", height: "100%", background: "white", overflow:"hidden", borderTopLeftRadius: 10, borderBottomRightRadius: 10, opacity: showImage ? 1 : 0.8 }}/></a>
+                          </div>
+                          <div class="career_text">
+                            <p style={{color: "white"}}>Industry-based Learning Placement: Configura<br/>Jan 2023 - June 2023</p>
+                            <br/><b>R&D Software Developer Intern</b>
+                          </div>
+                      </div>
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

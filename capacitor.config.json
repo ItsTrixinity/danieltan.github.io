@@ -1,0 +1,8 @@
+{
+    "appId": "io.ionic.DanielPortfolio",
+    "appName": "Daniel's Portfolio",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+  }

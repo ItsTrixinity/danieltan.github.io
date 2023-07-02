@@ -5,7 +5,7 @@ import javascript from "../assets/img/js2.svg";
 import ms from "../assets/img/ms.svg";
 import algo from "../assets/img/algo.svg";
 import r from "../assets/img/rstudio.svg";
-import haskell from "../assets/img/haskell.svg";
+import haskell from "../assets/img/haskell.png";
 import dv from "../assets/img/data-visualization.svg";
 import dm from "../assets/img/dm.svg";
 import cloud from "../assets/img/cloud.svg";
@@ -16,6 +16,9 @@ import ds from "../assets/img/data-science.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
+import cLogo from "../assets/img/c-.png"
+import deepLearning from "../assets/img/deep-learning.png"
+import parallel from "../assets/img/versatile.gif"
 import React from 'react';
 
 export const Skills = () => {
@@ -39,6 +42,8 @@ export const Skills = () => {
     }
   };
 
+  const [showImage, setShowImage] = React.useState(false);
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -48,8 +53,10 @@ export const Skills = () => {
                         <h2>Skills and Technology</h2>
                         <p>A list of skillsets and tech that I am comfortable with.<br></br> </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={python} alt="Image" />
+                            <div className="item" 
+                            onMouseEnter={() => setShowImage(false)}
+                            onMouseLeave={() => setShowImage(true)}>
+                                <img src={python} alt="Image" style={{ opacity: showImage ? 1 : 0.8 }}/>
                                 <h5>Python <br/>(Proficient)</h5>
                             </div>
                             <div className="item">
@@ -62,7 +69,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={javascript} alt="Image" />
-                                <h5>JavaScript</h5>
+                                <h5>JavaScript / TypeScript</h5>
                             </div>
                             <div className="item">
                                 <img src={ms} alt="Image" />
@@ -107,6 +114,18 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={ds} alt="Image" />
                                 <h5>Data Science <br/></h5>
+                            </div>
+                            <div className="item">
+                                <img src={cLogo} alt="Image" />
+                                <h5>C++ <br/></h5>
+                            </div>
+                            <div className="item">
+                                <img src={deepLearning} alt="Image" />
+                                <h5>Deep Learning <br/></h5>
+                            </div>
+                            <div className="item">
+                                <img src={parallel} alt="Image" />
+                                <h5>Parellel Computing <br/> (POSIX / MPI)</h5>
                             </div>
                         </Carousel>
                     </div>
