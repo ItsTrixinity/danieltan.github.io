@@ -20,7 +20,7 @@ import React from 'react';
 
 export const Projects = () => {
 
-  const [showImage, setShowImage] = React.useState(false);
+  const [showImage, setShowImage] = React.useState(true);
 
   const projects = [
     {

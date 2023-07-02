@@ -42,7 +42,7 @@ export const Skills = () => {
     }
   };
 
-  const [showImage, setShowImage] = React.useState(false);
+  const [showImage, setShowImage] = React.useState(true);
 
   return (
     <section className="skill" id="skills">
