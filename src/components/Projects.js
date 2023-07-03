@@ -66,19 +66,19 @@ export const Projects = () => {
       title: "TrixyCraft \nMinecraft Server",
       description: "Creativity, Games Design and Exploration\n❖ Java, APIs",
       imgUrl: p7,
-      link: "https://trixycraft.gq",
+      link: "https://mc.dtan.io",
     },
     {
       title: "Weng Hock \nOfficial Website",
       description: "A simple website, crafted for my personal family business\n❖ HTML, CSS, JavaScript",
       imgUrl: p8,
-      link: "https://wenghock.gq",
+      link: "https://wh.dtan.io",
     },
     {
       title: "This Website!",
       description: "My personal portfolio website is also one of my interesting projects!\n❖ ReactJS, CSS",
       imgUrl: p9,
-      link: "#",
+      link: "https://dtan.io",
     },
   ];
 
