@@ -19,6 +19,7 @@ import colorSharp from "../assets/img/color-sharp.png"
 import cLogo from "../assets/img/c-.png"
 import deepLearning from "../assets/img/deep-learning.png"
 import parallel from "../assets/img/versatile.gif"
+import combochart from "../assets/img/analytics.png"
 import React from 'react';
 
 export const Skills = () => {
@@ -126,6 +127,10 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={parallel} alt="Image" />
                                 <h5>Parellel Computing <br/> (POSIX / MPI)</h5>
+                            </div>
+                            <div className="item">
+                                <img src={combochart} alt="Image" />
+                                <h5>Statistical Analysis</h5>
                             </div>
                         </Carousel>
                     </div>

@@ -20,7 +20,18 @@ import React from 'react';
 
 export const Projects = () => {
 
-  const [showImage, setShowImage] = React.useState(true);
+  const [showImage, setShowImage] = React.useState(null);
+  const [isHovered, setIsHovered] = React.useState(null);
+  const handleShowImage = (e) => {
+    switch (e.target.id) {
+      case "1":
+          setShowImage(1)
+          break
+      case "2":
+          setShowImage(2)
+          break
+    }
+  }
 
   const projects = [
     {
@@ -149,7 +160,7 @@ export const Projects = () => {
                       ⚡ Sunway College, MY<br/>
                       ⚡ Monash University Foundation Year<br/>
                       <br/>
-                      <b>Year 2020 - Current:</b> <br/>
+                      <b>Year 2020 - 2023:</b> <br/>
                       ⚡ Monash University, MY<br/>
                       ⚡ Bachelor of Computer Science<br/>
                       ⚡ Specialized in Advanced Computer Science<br/>
@@ -162,24 +173,50 @@ export const Projects = () => {
                         <br/>🏆 Receiver of Monash High Achiever Award (Monash University Foundation Year)
                         <br/>🏆 Receiver of Monash High Achiever Award (Bachelor of Computer Science)
                         <br/>🏆 Receiver of Highest Performing Student Award in FIT1051: Programming Fundamentals In Java (Bachelor of Computer Science)
+                        <br/>🏆 Awarded Title: Bachelor of Computer Science
                       </p>
 
                     </Tab.Pane>
                     <Tab.Pane eventKey="fourth">
                     <p class="hover-underline-animation"><b>Personal Career</b></p>
-                    <Row>
-                      <div class="career_container">
-                          <div class="career_image" 
-                            onMouseEnter={() => setShowImage(false)}
-                            onMouseLeave={() => setShowImage(true)}>
-                              <a href="https://www.configura.com/" target="_blank"><img src={p10} style={{width: "100%", height: "100%", background: "white", overflow:"hidden", borderTopLeftRadius: 10, borderBottomRightRadius: 10, opacity: showImage ? 1 : 0.8 }}/></a>
+                    <Container>
+                      <Row>
+                        <Col>
+                        <div class="career_container">
+                          <div class="career_image">
+                              <a href="https://www.configura.com/" target="_blank"><img src={p10} style={{width: "100%", height: "100%", background: "white", overflow:"hidden", borderTopLeftRadius: 10, borderBottomRightRadius: 10 }}/></a>
                           </div>
                           <div class="career_text">
-                            <p style={{color: "white"}}>Industry-based Learning Placement: Configura<br/>Jan 2023 - June 2023</p>
                             <br/><b>R&D Software Developer Intern</b>
+                            <br></br>
+                            <br></br>
+                            <p style={{color: "white", display: "inline"}}>Industry-based Learning (IBL) <br/> Placement @ Configura<br/>Jan 2023 - June 2023</p>
+                            
                           </div>
-                      </div>
+                        </div>
+                        </Col>
                       </Row>
+                      <br></br>
+                      <br></br>
+                      <Row>
+                        <Col>
+                        <div class="career_container">
+                          <div class="career_image">
+                              <a href="https://www.configura.com/" target="_blank"><img src={p10} style={{width: "100%", height: "100%", background: "white", overflow:"hidden", borderTopLeftRadius: 10, borderBottomRightRadius: 10 }}/></a>
+                          </div>
+                          <div class="career_text">
+                            <br/><b>Associate Software Developer</b>
+                            <br></br>
+                            <br></br>
+                            <p style={{color: "white", display: "inline"}}>R&D, Product @ Configura</p>
+                            <br></br>
+                            <p style={{color: "white", display: "inline"}}>Dec 2023 - Current</p>
+                            
+                          </div>
+                        </div>
+                        </Col>
+                      </Row>
+                      </Container>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

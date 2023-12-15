@@ -758,17 +758,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .career_container {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content:space-between;
 }
 
 .career_img {
   max-width: 100%;
 }
 .career_image {
+  opacity:1;
+  transition: 1s ease;
   flex-basis: 60%
 }
+
+.career_image:hover {
+  opacity:0.6;
+  transition: 1s ease;
+  flex-basis: 60%
+}
+
 .career_text {
+  font-size: 20px;
+  padding-left: 0px;
+}
+
+.career_text2 {
   font-size: 20px;
   padding-left: 0px;
 }
