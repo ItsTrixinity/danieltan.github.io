@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfc2033d.css",
-    "main.js": "/static/js/main.06cb7b25.js",
+    "main.css": "/static/css/main.71a2e93c.css",
+    "main.js": "/static/js/main.be5652e5.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/Test-Design.jpg": "/static/media/Test-Design.fdd3102a9b2cbf258b14.jpg",
     "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -22,6 +22,7 @@
     "static/media/dizzy-gaming.svg": "/static/media/dizzy-gaming.a485e04b4c19590dac420522ed2b2ae8.svg",
     "static/media/deep-learning.png": "/static/media/deep-learning.8520927c3f67148e0353.png",
     "static/media/cyborg-biocapsule-1.svg": "/static/media/cyborg-biocapsule-1.0db8b1f96768b201afeba18eba8e488b.svg",
+    "static/media/analytics.png": "/static/media/analytics.746659024002370fa5b9.png",
     "static/media/haskell.png": "/static/media/haskell.110adca805211a97cb78.png",
     "static/media/c-.png": "/static/media/c-.24a8f93854ab092f17a7.png",
     "static/media/logo.svg": "/static/media/logo.87f570d64651c9044fa73f9643c95410.svg",
@@ -50,12 +51,12 @@
     "index.html": "/index.html",
     "static/media/github0.svg": "/static/media/github0.5f081bc4d23f9245f36df0a9ec43d4dd.svg",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.dfc2033d.css.map": "/static/css/main.dfc2033d.css.map",
-    "main.06cb7b25.js.map": "/static/js/main.06cb7b25.js.map",
+    "main.71a2e93c.css.map": "/static/css/main.71a2e93c.css.map",
+    "main.be5652e5.js.map": "/static/js/main.be5652e5.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc2033d.css",
-    "static/js/main.06cb7b25.js"
+    "static/css/main.71a2e93c.css",
+    "static/js/main.be5652e5.js"
   ]
 }
